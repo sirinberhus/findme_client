@@ -1,0 +1,40 @@
+.contact {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: var(--fs-headline-small);
+    color: var(--neutral-5);
+  }
+  
+  .section-text {
+    color: var(--neutral-60);
+    margin-bottom: 24px;
+  }
+  
+  .contact-form {
+    display: grid;
+    gap: 16px;
+  }
+  
+  .contact-item {
+    display: grid;
+    gap: 8px;
+  }
+  
+  .contact-item-field {
+    padding: 12px;
+    border: 1px solid var(--neutral-80);
+    border-radius: var(--radius-small);
+  }
+  
+  .contact-btn {
+    background: var(--primary-100);
+    color: var(--neutral-100);
+    padding: 12px 24px;
+    border-radius: var(--radius-full);
+    transition: var(--transition-duration-quick) var(--transition-easing-quick);
+  }
+  
+  .contact-btn:where(:hover, :focus) { background-color: var(--primary-80); }
+  
