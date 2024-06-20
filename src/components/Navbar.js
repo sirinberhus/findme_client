@@ -1,23 +1,42 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 // import '../css/Navbar.css';
 
 function Navbar() {
-  useEffect(() => {
-    const $navbar = document.querySelector("[data-navbar]");
-    const $navToggler = document.querySelector("[data-nav-toggler]");
+  const navbarRef = useRef(null);
+  const navTogglerRef = useRef(null);
+  const headerRef = useRef(null);
 
-    $navToggler.addEventListener("click", () => $navbar.classList.toggle("active"));
+  useEffect(() => {
+    const $navbar = navbarRef.current;
+    const $navToggler = navTogglerRef.current;
+    const $header = headerRef.current;
+
+    const handleToggle = () => {
+      $navbar.classList.toggle("active");
+    };
+
+    const handleScroll = () => {
+      $header.classList[window.scrollY > 50 ? "add" : "remove"]("active");
+    };
+
+    $navToggler.addEventListener("click", handleToggle);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      $navToggler.removeEventListener("click", handleToggle);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
-    <header className="header" data-header>
+    <header className="header" ref={headerRef} data-header>
       <div className="container">
         <a href="#" className="logo">
-          <img src="./assets/images/logo.png" width="190" height="28" alt="findevent" />
+          <img src="/images/logo.png" width="190" height="28" alt="findevent" />
         </a>
-        <nav className="navbar" data-navbar>
+        <nav className="navbar" ref={navbarRef} data-navbar>
           <ul className="navbar-list">
-            <li><a href="#" className="navbar-link label-medium active">Ana Sayfa</a></li>
+            <li><a href="#" className="navbar-link label-medium active">Home</a></li>
             <li><a href="#" className="navbar-link label-medium">Etkinlikler</a></li>
             <li><a href="#" className="navbar-link label-medium">Kategoriler</a></li>
             <li><a href="#" className="navbar-link label-medium">İletişim</a></li>
@@ -28,7 +47,12 @@ function Navbar() {
             <a href="#" className="btn btn-fill label-medium">Başlayın</a>
           </div>
         </nav>
-        <button className="nav-toggle-btn icon-btn" aria-label="toggle navbar" data-nav-toggler>
+        <button
+          className="nav-toggle-btn icon-btn"
+          aria-label="toggle navbar"
+          ref={navTogglerRef}
+          data-nav-toggler
+        >
           <span className="material-symbols-rounded open" aria-hidden="true">menu</span>
           <span className="material-symbols-rounded close" aria-hidden="true">close</span>
         </button>

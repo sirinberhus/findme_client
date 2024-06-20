@@ -20,11 +20,8 @@ function EventList() {
           <div className="card">
             <div className="card-banner">
               <figure className="img-holder" style={{ "--width": 585, "--height": 390 }}>
-                <img src="/images/property-1.jpg" width="585" height="390" alt="Dark Blue and White Piano Jazz" className="img-cover" />
+                <img src="/images/property-1.png" width="585" height="390" alt="Dark Blue and White Piano Jazz" className="img-cover" />
               </figure>
-              <button className="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
-                <span className="material-symbols-rounded" aria-hidden="true">favorite</span>
-              </button>
             </div>
             <div className="card-content">
               <span className="title-large">Ağustos 28</span>
@@ -37,9 +34,6 @@ function EventList() {
               <figure className="img-holder" style={{ "--width": 585, "--height": 390 }}>
                 <img src="/images/property-3.jpg" width="585" height="390" alt="Party Tropical Night" className="img-cover" />
               </figure>
-              <button className="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
-                <span className="material-symbols-rounded" aria-hidden="true">favorite</span>
-              </button>
             </div>
             <div className="card-content">
               <span className="title-large">20 Şubat</span>
@@ -50,11 +44,72 @@ function EventList() {
           <div className="card">
             <div className="card-banner">
               <figure className="img-holder" style={{ "--width": 585, "--height": 390 }}>
+                <img src="/images/property-4.jpg" width="585" height="390" alt="Party Tropical Night" className="img-cover" />
+              </figure>
+            </div>
+            <div className="card-content">
+              <span className="title-large">21,22,23 Kasım</span>
+              <h3><a href="#" className="title-small card-title">Maanvita Kumari</a></h3>
+              <address className="body-medium card-text">123 Anywhere ST, ..Any City</address>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-banner">
+              <figure className="img-holder" style={{ "--width": 585, "--height": 390 }}>
+                <img src="/images/property-5.jpg" width="585" height="390" alt="Party Tropical Night" className="img-cover" />
+              </figure>
+            </div>
+            <div className="card-content">
+              <span className="title-large">12 Mayıs</span>
+              <h3><a href="#" className="title-small card-title">Solis Concert</a></h3>
+              <address className="body-medium card-text">123 Anywhere ST, ..Any City</address>
+            </div>
+          </div>
+
+          <div className="card">
+            <div className="card-banner">
+              <figure className="img-holder" style={{ "--width": 585, "--height": 390 }}>
+                <img src="/images/property-7.jpg" width="585" height="390" alt="Marathon Festival" className="img-cover" />
+              </figure>
+            </div>
+            <div className="card-content">
+              <span className="title-large">23 Haziran</span>
+              <h3><a href="#" className="title-small card-title">Marathon Festival</a></h3>
+              <address className="body-medium card-text">123 Anywhere ST, ..Any City</address>
+            </div>
+          </div>
+
+          <div className="card">
+            <div className="card-banner">
+              <figure className="img-holder" style={{ "--width": 585, "--height": 390 }}>
+                <img src="/images/property-6.jpg" width="585" height="390" alt="Yaz Festivali Başlıyor" className="img-cover" />
+              </figure>
+            </div>
+            <div className="card-content">
+              <span className="title-large">13 Haziran</span>
+              <h3><a href="#" className="title-small card-title">Yaz Festivali</a></h3>
+              <address className="body-medium card-text">Atatürk Mah. Gazi Bulvarı No: 12 10100 Karesi/Balıkesir</address>
+            </div>
+          </div>
+
+          <div className="card">
+            <div className="card-banner">
+              <figure className="img-holder" style={{ "--width": 585, "--height": 390 }}>
+                <img src="/images/property-8.jpg" width="585" height="390" alt="Remix Party Night" className="img-cover" />
+              </figure>
+            </div>
+            <div className="card-content">
+              <span className="title-large">24 Aralık</span>
+              <h3><a href="#" className="title-small card-title">Remix Party Night</a></h3>
+              <address className="body-medium card-text">Yeni,16, 18280, Kizilirmak/Izmir, Turkey</address>
+            </div>
+          </div>
+
+          <div className="card">
+            <div className="card-banner">
+              <figure className="img-holder" style={{ "--width": 585, "--height": 390 }}>
                 <img src="/images/property-2.jpg" width="585" height="390" alt="Helin Kınay" className="img-cover" />
               </figure>
-              <button className="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
-                <span className="material-symbols-rounded" aria-hidden="true">favorite</span>
-              </button>
             </div>
             <div className="card-content">
               <span className="title-large">Aralık Ayı Turnesi</span>

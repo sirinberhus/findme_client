@@ -6,9 +6,9 @@ function SearchBar() {
     <section className="hero">
       <div className="container">
         <div className="hero-content">
-          <h1 className="headline-large hero-title">Findevent ile anı yakala ve hayatını renklendir.</h1>
+          <h1 className="headline-large hero-title">Keşfet, Katıl, Unutulmaz Anılar Biriktir!</h1>
           <p className="body-large hero-text">
-            Bulunduğun yerdeki en heyecan verici etkinlikleri keşfet; her anı dolu dolu yaşa.
+          Müzikten spora, aile etkinliklerinden sahne gösterilerine kadar geniş bir yelpazede etkinlikleri keşfedin. Size en uygun etkinlikleri bulun ve hemen katılın. 
           </p>
           <form action="./" method="get" className="search-bar">
             <label className="search-item">
@@ -47,8 +47,8 @@ function SearchBar() {
             </button>
           </form>
         </div>
-        <img src="/assets/images/hero.png" width="816" height="659" role="presentation" className="hero-banner" />
-        <img src="/assets/images/bg-pattern.png" width="1240" height="840" role="presentation" className="bg-pattern" />
+        <img src="/images/hero.png" width="816" height="659" role="presentation" className="hero-banner" />
+        <img src="/images/bg-pattern.png" width="1240" height="840" role="presentation" className="bg-pattern" />
       </div>
     </section>
   );
