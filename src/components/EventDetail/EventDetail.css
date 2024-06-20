@@ -1,0 +1,74 @@
+.event-detail {
+    margin: 20px auto;
+    max-width: 1000px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-media-container {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.event-title {
+    font-size: 2rem;
+    margin: 14px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.event-subtitle {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.event-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    white-space: pre-line; /* Yeni satırları korumak için */
+    width: 100%;
+    max-width: 800px; /* Açıklama kapsayıcısının maksimum genişliği */
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Responsive Tasarım İçin Medya Sorguları */
+@media (max-width: 1200px) {
+    .event-detail {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .event-title, .event-subtitle, .event-description {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .event-title {
+        font-size: 1.2rem;
+    }
+    .event-subtitle {
+        font-size: 1rem;
+    }
+    .event-description {
+        font-size: 1rem;
+    }
+}

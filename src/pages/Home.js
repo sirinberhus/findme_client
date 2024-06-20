@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import SearchBar from '../components/SearchBar';
-import EventList from '../components/EventList';
+import EventList from '../components/EventDetail/EventList';
 import Contact from '../components/Contact';
 
 function Home() {
