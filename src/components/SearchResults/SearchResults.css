@@ -1,0 +1,207 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #0057b8;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-login {
+    display: flex;
+    gap: 10px;
+}
+
+.search-login input {
+    padding: 5px;
+}
+
+.search-login button {
+    background-color: white;
+    color: #0057b8;
+    border: none;
+    padding: 5px 10px;
+}
+
+.content-container {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 999;
+    min-height: 457px;
+    height: auto;
+    width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-wrapper {
+    background-color: #c3d9ef;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6d7c89;
+    padding: 8px 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.filter-header button {
+    background-color: #e61765;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filter-buttons {
+    display: flex;
+    padding: 8px 0;
+}
+
+.filter-buttons button {
+    background-color: transparent;
+    color: #004085;
+    border: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.filter-buttons button span {
+    display: inline-block;
+    transform: translateY(1px);
+}
+
+.button1 {
+    flex: 0 0 60%;
+}
+
+.button2 {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.button3 {
+    margin-right: 5px;
+}
+
+.filter-buttons button.active {
+    color: blue;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 2px;
+    line-height: 16px;
+}
+
+.result-item {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.event-image-title {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    gap: 20px;
+}
+
+.event-image-title img {
+    width: 130px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.event-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-venue {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    font-size: 14px;
+    margin-left: 250px;
+}
+
+.event-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.event-details h2 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.event-venue p, .event-date p {
+    margin: 5px 0;
+}
+
+.event-details a {
+    margin-top: 5px;
+    color: #0057b8;
+    text-decoration: none;
+    font-size: 14px;
+}
